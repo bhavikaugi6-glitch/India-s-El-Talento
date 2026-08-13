@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India's El Talento</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #04012e;
+            background: #00235;
+            color; white; 
+        }
+
+        /* NAVBAR */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1d1d1d;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f5b400;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #f5b400;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #f5b400;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            color: #dddddd;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #f5b400;
+            color: #111111;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* ABOUT */
+
+        .about {
+            padding: 80px 10%;
+            text-align: center;
+            background: #151515;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            color: #f5b400;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            color: #dddddd;
+            font-size: 18px;
+        }
+
+        /* CATEGORIES */
+
+        .categories {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 40px;
+            color: #f5b400;
+            margin-bottom: 40px;
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            width: 220px;
+            padding: 35px 20px;
+            background: #181818;
+            border-radius: 15px;
+            border: 1px solid #333333;
+        }
+
+        .category:hover {
+            transform: translateY(-8px);
+            border-color: #f5b400;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .category p {
+            color: #bbbbbb;
+        }
+
+        /* WHY PARTICIPATE */
+
+        .why {
+            padding: 80px 8%;
+            text-align: center;
+            background: #151515;
+        }
+
+        .why h2 {
+            font-size: 40px;
+            color: #f5b400;
+            margin-bottom: 40px;
+        }
+
+        .why-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .why-box {
+            width: 220px;
+            padding: 30px;
+            background: #202020;
+            border-radius: 15px;
+        }
+
+        .why-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .why-box p {
+            color: #bbbbbb;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #080808;
+            color: #aaaaaa;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            INDIA'S EL TALENTO
+        </div>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories">Categories</a>
+           <a href="register.html">Register</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <h1>INDIA'S EL TALENTO</h1>
+
+        <h2>India's Next Big Talent Starts Here!</h2>
+
+        <p>
+            Show the world what you can do.
+            Participate, perform and let your talent shine.
+        </p>
+
+      <a href="register.html" class="btn">
+    REGISTER NOW
+</a>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+
+        <h2>About India's El Talento</h2>
+
+        <p>
+            India's El Talento is a platform created to discover,
+            celebrate and showcase talented individuals from across India.
+            Whether you sing, dance, act, create art or have a unique talent,
+            this is your opportunity to step forward and show what you can do.
+        </p>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="categories">
+
+        <h2>Talent Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <h3>🎤 Singing</h3>
+                <p>Show us your singing talent.</p>
+            </div>
+
+            <div class="category">
+                <h3>💃 Dancing</h3>
+                <p>Show your moves and energy.</p>
+            </div>
+            
+            <div class="category">
+                <h3>🕴️ Modeling
+                </h3>
+                <p>boost your inner confidence.</p>
+            </div>
+
+            <div class="category">
+                <h3>🎭 Acting</h3>
+                <p>Bring your performance to life.</p>
+            </div>
+
+            <div class="category">
+                <h3>📸 Live Show</h3>
+                <p>Show your creativity and imagination.</p>
+            </div>
+
+            <div class="category">
+                <h3>✨ Other Talent</h3>
+                <p>Have something unique? Show us!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY PARTICIPATE -->
+
+    <section class="why">
+
+        <h2>Why Participate?</h2>
+
+        <div class="why-container">
+
+            <div class="why-box">
+                <h3>🌟 Showcase</h3>
+                <p>Get a platform to showcase your talent.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>🏆 Recognition</h3>
+                <p>Get recognized for your talent and performance.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>🎬 Exposure</h3>
+                <p>Get an opportunity to reach a wider audience.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>🚀 Opportunity</h3>
+                <p>Take the next step towards your talent journey.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTER PLACEHOLDER -->
+
+    <section class="about" id="register">
+
+        <h2>Ready to Showcase Your Talent?</h2>
+
+        <p>
+            Registration will open soon.
+            Get ready to take the stage and show India what you can do!
+        </p>
+
+        <br>
+
+        <a href="#" class="btn">
+            REGISTER NOW
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <p>© 2026 India's El Talento. All Rights Reserved.</p>
+
+    </footer>
+
+
+</body>
+</html>

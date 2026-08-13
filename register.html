@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - India's El Talento</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #111111;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f5b400;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #f5b400;
+        }
+
+        /* REGISTRATION */
+
+        .registration {
+            min-height: 90vh;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-box {
+            width: 100%;
+            max-width: 650px;
+            background: #171717;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+
+        .form-box h1 {
+            text-align: center;
+            color: #f5b400;
+            margin-bottom: 10px;
+        }
+
+        .form-box .subtitle {
+            text-align: center;
+            color: #bbbbbb;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #0d0d0d;
+            color: white;
+            font-size: 16px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #f5b400;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background: #f5b400;
+            color: #111;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: white;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #f5b400;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #080808;
+            color: #999;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            INDIA'S EL TALENTO
+        </div>
+
+        <div>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#about">About</a>
+
+            <a href="index.html#categories">Categories</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- REGISTRATION FORM -->
+
+    <section class="registration">
+
+        <div class="form-box">
+
+            <h1>Contestant Registration</h1>
+
+            <p class="subtitle">
+                Register yourself for India's El Talento
+            </p>
+
+
+            <form>
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- AGE -->
+
+                <div class="form-group">
+
+                    <label for="age">
+                        Age
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Enter your age"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MOBILE -->
+
+                <div class="form-group">
+
+                    <label for="mobile">
+                        Mobile Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="mobile"
+                        placeholder="Enter your mobile number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CITY -->
+
+                <div class="form-group">
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter your city"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Talent Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select your talent
+                        </option>
+
+                        <option value="singing">
+                            Singing
+                        </option>
+
+                        <option value="dancing">
+                            Dancing
+                        </option>
+
+                        <option value="acting">
+                            Acting
+                        </option>
+
+                        <option value="art">
+                            Art
+                        </option>
+
+                        <option value="other">
+                            Other Talent
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TALENT DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Tell us about your talent
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Briefly describe your talent..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PHOTO -->
+
+                <div class="form-group">
+
+                    <label for="photo">
+                        Upload Your Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <!-- VIDEO -->
+
+                <div class="form-group">
+
+                    <label for="video">
+                        Upload Performance Video
+                    </label>
+
+                    <input
+                        type="file"
+                        id="video"
+                        accept="video/*"
+                    >
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    SUBMIT REGISTRATION
+                </button>
+
+            </form>
+
+
+            <a
+                href="index.html"
+                class="back"
+            >
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 India's El Talento. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
